@@ -1,0 +1,129 @@
+html {
+    font-family: sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6em;
+    line-height: 1.6;
+    font-weight: 400;
+    font-family: "Fira Sans", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin: 0;
+    color: #000;
+}
+
+
+.section {
+    display: block;
+    margin: 0 auto;
+    padding: $section-indent 0;
+
+    &--header {
+        padding-bottom: 0;
+        background: url('./images/cat.png') #eee 50% 100% no-repeat;
+        background-size: 60%;
+        min-height: 60vh;
+        @include respond-to(mobile) {
+            background-size: 100%;
+            min-height: 55vh;
+        };
+    }
+    &--balance { }
+    &--checks { }
+    &--footer { }
+}
+
+.container {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.link {
+    color: #0065ff;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    &:hover, &:active {
+        color: #f00;
+        border-bottom-color: #f00;
+    }
+
+    &--base {
+        color: #000;
+    }
+}
+
+.header {
+    &__title {
+        font-weight: 600;
+        font-size: 3.6rem;
+        @include respond-to(mobile) { font-size: 2.8rem; }
+    }
+    &__welcome {
+        font-family: "Georgia", "TimesNewRoman", "Times New Roman";
+        font-size: 2rem;
+        @include respond-to(mobile) { font-size: 1.6rem; }
+    }
+}
+
+.footer {
+    &__copyright {
+        text-align: center;
+    }
+    &__likely {
+        text-align: center;
+        padding: 20px 0;
+    }
+}
+
+.control {
+  font-size: 1.6rem;
+  outline: none;
+  border: none;
+  padding: 0 1rem;
+  border-radius: 0;
+  -webkit-appearance: none;
+  &_button {
+    height: 40px;
+    background-color: #ffd70a;
+    color: #000;
+    border: 1px solid rgba(0, 0, 0, .1);
+    cursor: pointer;
+    text-align: center;
+
+    &:hover, &:active {
+      background-color: #ffd633;
+      border: 1px solid rgba(0, 0, 0, .1);
+      color: #000;
+    }
+  }
+  &_input {
+    height: 38px;
+    border-bottom: 2px solid rgba(0, 0, 0, .1);
+    background-color: inherit;
+
+    &:active, &:focus {
+      border-color: #ffd70a;
+    }
+  }
+}
+
+.donate {
+  text-align: center;
+  &__input {
+    text-align: right;
+    padding: 0 .3rem;
+    max-width: 5.5rem;
+  }
+  &__button {
+
+  }
+}
+
+.donate-list {
+  &__item {
+    font-size: 1.4rem;
+    color: #888;
+  }
+}

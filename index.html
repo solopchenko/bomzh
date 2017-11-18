@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="robots" content="index, follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Меня зовут Святослав. Учусь в Москве, пытаюсь прожить на 10 000 рублей в месяц.">
+    <meta name="author" content="Святослав Солопченко">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://solopchenko.net/bomzh">
+    <meta property="og:title" content="Эксперимент: Прожить в Москве на 10 000 рублей">
+    <meta property="og:description" content="Меня зовут Святослав. Учусь в Москве, пытаюсь прожить на 10 000 рублей в месяц.">
+    <meta property="og:image" content="http://solopchenko.net/bomzh/images/preview.jpg" />
+    <meta property="og:image:width" content="1080" />
+    <meta property="og:image:height" content="480" />
+    <link rel="shortcut icon" href="./images/favicon.ico">
+    <link href="build/app.css" rel="stylesheet">
+    <title>Эксперимент: Прожить в Москве на 10 000 рублей</title>
+</head>
+<body>
+
+    <header class="section section--header">
+        <div class="container">
+            <h1 class="title header__title">Прожить в&nbsp;Москве на&nbsp;10&nbsp;000&nbsp;₽ в&nbsp;месяц?</h1>
+            <div class="header__welcome">
+                <p>Привет! Меня зовут Святослав.<br>Учусь на первом курсе, пытаюсь прожить в&nbsp;Москве на&nbsp;10&nbsp;000&nbsp;рублей в&nbsp;месяц и публикую свои расходы тут.</p>
+            </div>
+        </div>
+    </header>
+
+    <section class="section section--balance">
+        <div class="container">
+            <div class="balance">
+                <p class="balance__text">Осталось на счёте <span class="balance__sum" id="balance">10000 ₽</span></p>
+            </div>
+            <div class="donate">
+                <form method="POST" action="https://money.yandex.ru/quickpay/confirm.xml">
+                  <input type="hidden" name="receiver" value="410011744690361">
+                  <input type="hidden" name="quickpay-form" value="small">
+                  <input type="hidden" name="targets" value="Прожить на 10000 руб. в Москве: поддержка проекта">
+                  <input type="hidden" name="paymentType" value="AC">
+
+                  <input type="text" class="control control_input donate__input" name="sum" value="50" data-type="number" placeholder="Сумма">
+                  <span>₽</span>
+                  <input type="submit" class="control control_button donate__button" value="Поддержать">
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="section sections--checks">
+        <div class="container" id="checks">
+            <div class="check">
+                <div class="check-message">Нет трат</div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="section section--footer">
+        <div class="container">
+            <div class="footer__likely">
+                <div class="likely">
+                    <div class="facebook" tabindex="0" role="link" aria-label="Рассказать на Фейсбук">Поделиться</div>
+                    <div class="twitter" tabindex="0" role="link" aria-label="Поделиться в Твиттере">Твитнуть</div>
+                    <div class="vkontakte" tabindex="0" role="link" aria-label="Рассказать во ВКонтакте">Рассказать</div>
+                    <div class="odnoklassniki" tabindex="0" role="link" aria-label="Рассказать на Одноклассниках">Класс</div>
+                    <div class="telegram" tabindex="0" role="link" aria-label="Отправить в Телеграм">Отправить</div>
+                    <div class="whatsapp" tabindex="0" role="link" aria-label="Отправить в WhatsApp">Отправить</div>
+                </div>
+            </div>
+            <div class="footer__copyright">
+                Сделал <a class="link link--base" href="//solopchenko.net" target="_blank">Святослав Солопченко</a> в&nbsp;2017&nbsp;году.
+            </div>
+        </div>
+    </footer>
+    <link href="//fonts.googleapis.com/css?family=Fira+Sans:400,600" rel="stylesheet">
+
+    <script type="text/javascript" src="data/checks.json"></script>
+    <script src="build/app.js"></script>
+
+    <link href="build/likely.css" rel="stylesheet">
+    <script type="text/javascript" src="build/likely.js"></script>
+</body>
+</html>

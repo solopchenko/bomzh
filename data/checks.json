@@ -1,0 +1,28 @@
+var checks = [
+    {
+        "date": "22 сентября 2017",
+        "location": "Эппл мьюзик",
+        "items": [
+            { "name": "Октябрь", "amount": 1, "price": 75 }
+        ]
+    },
+    {
+        "date": "22 сентября 2017",
+        "location": "Макдональдс",
+        "items": [
+            { "name": "Чикенбургер", "amount": 1, "price": 50 },
+            { "name": "Чизбургер", "amount": 1, "price": 50 },
+            { "name": "Кофе", "amount": 1, "price": 69 },
+        ]
+    },
+    {
+        "date": "21 сентября 2017",
+        "location": "Билла",
+        "items": [
+            { "name": "Сос. филейные", "amount": 0.138, "price": 49.54 },
+            { "name": "Сыр костром.", "amount": 0.250, "price": 164.90 },
+            { "name": "Сахар", "amount": 0.900, "price": 39.95 },
+            { "name": "Батон пшен.", "amount": 1, "price": 21.90 },
+        ]
+    },
+];
